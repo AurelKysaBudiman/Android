@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#527853"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtbdt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="181dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="182dp"
+        android:layout_marginBottom="696dp"
+        android:rotationX="41"
+        android:text="Biodata"
+        android:textSize="24dp"
+        android:textColor="#22092C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ptnama"
+        android:layout_width="365dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="Nama"
+        android:rotationX="41"
+        android:inputType="text"
+        android:textColor="#FAFAFA"
+        android:textColorHint="#22092C"
+        app:layout_constraintBottom_toTopOf="@+id/spinkelas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtbdt" />
+
+    <Button
+        android:id="@+id/btnsub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="159dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="159dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#9FBB73"
+        android:text="Submit"
+        android:rotationX="41"
+        android:textColor="#22092C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txthasilnama" />
+
+    <Spinner
+        android:id="@+id/spinkelas"
+        android:layout_width="368dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="27dp"
+        android:autofillHints="Kelas"
+        android:rotationX="41"
+        android:background="@color/design_default_color_primary_variant"
+        android:backgroundTint="#9FBB73"
+        android:entries="@array/spkelas"
+        android:outlineAmbientShadowColor="#CD1414"
+        android:outlineSpotShadowColor="#8E0909"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ptnama" />
+
+    <TextView
+        android:id="@+id/txtviewjenis"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="55dp"
+        android:rotationX="41"
+        android:text="Jenis Kelamin:"
+        android:textColor="#22092C"
+        app:layout_constraintEnd_toStartOf="@+id/radioGroup"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinkelas" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="55dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtviewjenis"
+        app:layout_constraintTop_toBottomOf="@+id/spinkelas">
+
+        <RadioButton
+            android:id="@+id/rbperempuan"
+            android:layout_width="137dp"
+            android:rotationX="41"
+            android:text="Perempuan"
+            android:textColor="#7E0505" />
+
+        <RadioButton
+            android:id="@+id/rblaki"
+            android:layout_width="123dp"
+            android:rotationX="41"
+            android:text="Laki-Laki"
+            android:textColor="#3F51B5" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txthasilnama"
+        android:layout_width="383dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="246dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="21dp"
+        android:background="#9FBB73"
+        android:hint="hasil nama"
+        android:rotationX="41"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#CF0C0C"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/btnsub"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="130dp"
+        android:text="Kehadiran:"
+        android:rotationX="41"
+        android:textColor="#22092C"
+        app:layout_constraintBottom_toTopOf="@+id/txthasilnama"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtviewjenis" />
+
+    <Switch
+        android:id="@+id/swhadir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginBottom="126dp"
+        android:text="Switch"
+        android:rotationX="41"
+        android:textColor="#22092C"
+        app:layout_constraintBottom_toTopOf="@+id/txthasilnama"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fbtnKembali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:backgroundTint="#9FBB73"
+        app:layout_constraintBottom_toTopOf="@+id/txthasilnama"
+        android:rotationX="41"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinkelas"
+        app:layout_constraintVertical_bias="0.896"
+        app:srcCompat="@android:drawable/ic_media_rew" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

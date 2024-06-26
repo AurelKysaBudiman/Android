@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#26577C"
+    tools:context=".Baru2_Kalkulator">
+
+    <EditText
+        android:id="@+id/ptangka2"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="30dp"
+        android:background="#E1DADA"
+        android:ems="10"
+        android:hint="Angka 2"
+        android:inputType="text"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ptangka1" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="30dp"
+        android:text="Kalkulator Spinner"
+        android:textColor="#FFFFFF"
+        android:textSize="37sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ptangka1"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="27dp"
+        android:background="#ECD3D3"
+        android:ems="10"
+        android:hint="Angka 1"
+        android:inputType="text"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/btnoperasi"
+        android:layout_width="302dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#26577C"
+        android:text="Operasi"
+        android:textColorHint="#E60404"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txthitung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="126dp"
+        android:background="#4C4646"
+        android:backgroundTint="#E3E8EC"
+        android:hint="Hasilnya"
+        android:textSize="37sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spoperator" />
+
+    <Spinner
+        android:id="@+id/spoperator"
+        android:layout_width="306dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="44dp"
+        android:entries="@array/OPspinner"
+        android:outlineAmbientShadowColor="#170101"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ptangka2" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fbtnKembali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#26577C"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/btnoperasi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txthitung"
+        app:srcCompat="@android:drawable/ic_media_rew" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
